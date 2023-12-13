@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "kenyaemr": "^18.6.2"
+  },
+  "pages": [],
+  "extensions": [
+    {
+      "name": "enhanced-adherence-sessions",
+      "component": "enhancedAdherenceComponent",
+      "slot": "patient-chart-shr-dashboard-slot",
+      "meta": {
+        "columnSpan": 4
+      }
+    },
+    {
+      "name": "enhanced-adherence-dashboard-link",
+      "component": "enhancedAdherenceManagementDashboardLink",
+      "slot": "patient-chart-dashboard-slot",
+      "order": 22,
+      "meta": {
+        "columns": 1,
+        "columnSpan": 1,
+        "slot": "patient-chart-shr-dashboard-slot",
+        "title": "Enhanced Adherence",
+        "path": "Enhanced Adherence"
+      }
+    }
+  ]
+}
